@@ -144,7 +144,7 @@ get_psk_info(struct dtls_context_t *ctx UNUSED_PARAM,
 }
 #endif /* DTLS_PSK */
 
-#ifdef DTLS_ECC
+#if DTLS_ECC
 static int
 get_ecdsa_key(struct dtls_context_t *ctx,
 	      const session_t *session,
@@ -316,7 +316,7 @@ static dtls_handler_t cb = {
 #ifdef DTLS_PSK
   .get_psk_info = get_psk_info,
 #endif /* DTLS_PSK */
-#ifdef DTLS_ECC
+#if DTLS_ECC
   .get_ecdsa_key = get_ecdsa_key,
   .verify_ecdsa_key = verify_ecdsa_key
 #endif /* DTLS_ECC */

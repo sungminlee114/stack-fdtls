@@ -6,7 +6,7 @@
 #include <stdint.h>
 
 /* Use same log level as CoAP as default */
-#define LOG_LEVEL_DTLS LOG_LEVEL_COAP
+#define LOG_LEVEL_DTLS LOG_LEVEL_DBG
 
 #define DTLS_LOG_CONF_PATH "sys/log.h"
 

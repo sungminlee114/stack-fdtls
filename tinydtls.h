@@ -55,7 +55,7 @@
     When Peers are sending bigger messages this causes problems. Californium
     with ECDSA needs at least 220 */
 #ifdef CONTIKI
-#ifdef DTLS_ECC
+#if DTLS_ECC
 #define DTLS_MAX_BUF 200
 #else /* DTLS_ECC */
 #define DTLS_MAX_BUF 100

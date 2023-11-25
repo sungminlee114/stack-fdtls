@@ -120,7 +120,7 @@ typedef struct {
   dtls_cipher_t cipher;		/**< cipher type */
   unsigned int do_client_auth:1;
   union {
-#ifdef DTLS_ECC
+#if DTLS_ECC
     dtls_handshake_parameters_ecdsa_t ecdsa;
 #endif /* DTLS_ECC */
 #ifdef DTLS_PSK

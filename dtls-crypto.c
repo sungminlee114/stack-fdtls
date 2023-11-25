@@ -285,7 +285,7 @@ dtls_psk_pre_master_secret(unsigned char *key, size_t keylen,
 }
 #endif /* DTLS_PSK */
 
-#ifdef DTLS_ECC
+#if DTLS_ECC
 static void dtls_ec_key_to_uint32(const unsigned char *key, size_t key_size,
 				  uint32_t *result) {
   int i;

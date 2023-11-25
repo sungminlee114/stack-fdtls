@@ -14,7 +14,7 @@
 #
 
 DTLS_SUPPORT   ?= posix
-LOG_LEVEL_DTLS ?= LOG_LEVEL_INFO
+LOG_LEVEL_DTLS ?= LOG_LEVEL_DBG
 
 # files and flags
 SOURCES:= dtls-server.c ccm-test.c prf-test.c dtls-client.c

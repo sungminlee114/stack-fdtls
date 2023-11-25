@@ -145,7 +145,7 @@ typedef struct {
 
 #endif /* DTLS_PSK */
 
-#ifdef DTLS_ECC
+#if DTLS_ECC
   /**
    * Called during handshake to get the server's or client's ecdsa
    * key used to authenticate this server or client in this 
