@@ -1,7 +1,7 @@
 #ifndef DTLS_SUPPORT_CONF_H_
 #define DTLS_SUPPORT_CONF_H_
 
-#include "net/ip/uip.h"
+#include "net/ipv6/uip.h"
 #include "sys/ctimer.h"
 #include <stdint.h>
 

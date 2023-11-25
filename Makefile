@@ -17,7 +17,7 @@
 # the library's version
 VERSION:=0.8.6
 
-DTLS_SUPPORT   ?= posix
+DTLS_SUPPORT   ?= contiki-support
 LOG_LEVEL_DTLS ?= LOG_LEVEL_INFO
 
 # files and flags
