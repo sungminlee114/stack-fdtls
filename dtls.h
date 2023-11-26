@@ -379,6 +379,14 @@ typedef struct __attribute__((__packed__)) {
 int dtls_record_read(dtls_state_t *state, uint8_t *msg, int msglen);
 #endif
 
+int
+dtls_encrypt_data(dtls_context_t * ctx, session_t *dst, uint8_t *buf,size_t len, uint8_t*sendbuf, size_t s_len);
+
+int
+calculate_key_block_self(dtls_context_t *ctx, session_t *sess);
+int
+create_virtual_peer(dtls_context_t *ctx, session_t *sess,unsigned char *psk_id, size_t len);
+
 /** 
  * Handles incoming data as DTLS message from given peer.
  *

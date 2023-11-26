@@ -56,11 +56,14 @@ dtls_new_peer(const session_t *session) {
     peer->security_params[0] = dtls_security_new();
 
     if (!peer->security_params[0]) {
+      LOG_INFO("cannot allocate security parameters\n");
       dtls_free_peer(peer);
       return NULL;
     }
 
     dtls_debug_session("dtls_new_peer", session);
+  } else {
+    LOG_INFO("cannot allocate new peer\n");
   }
 
   return peer;

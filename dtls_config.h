@@ -124,12 +124,12 @@
 /* global constants for constrained devices */
 #ifndef DTLS_PEER_MAX
 /** The maximum number DTLS peers (i.e. sessions). */
-#define DTLS_PEER_MAX 1
+#define DTLS_PEER_MAX 3
 #endif
 
 #ifndef DTLS_HANDSHAKE_MAX
 /** The maximum number of concurrent DTLS handshakes. */
-#define DTLS_HANDSHAKE_MAX 1
+#define DTLS_HANDSHAKE_MAX 3
 #endif
 
 #ifndef DTLS_SECURITY_MAX
